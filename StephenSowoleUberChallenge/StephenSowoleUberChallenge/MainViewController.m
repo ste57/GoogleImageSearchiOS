@@ -161,7 +161,7 @@
     AsyncImageView *asyncImage = [[AsyncImageView alloc] initWithFrame:CGRectMake(0, 0, IMAGE_SIZE, IMAGE_SIZE)];
     asyncImage.center = CGPointMake(position.x, position.y);
     asyncImage.layer.anchorPoint = CGPointMake(0.5, 0);
-    asyncImage.contentMode = UIViewContentModeScaleAspectFit;
+    asyncImage.contentMode = UIViewContentModeScaleAspectFill;
     asyncImage.clipsToBounds = YES;
     asyncImage.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     asyncImage.layer.cornerRadius = 5;
